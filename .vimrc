@@ -13,16 +13,15 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
-" set mouse=a
+set mouse=a
 set incsearch
 set nohlsearch
-
-set termguicolors
 set scrolloff=8
 set signcolumn=yes
-
 set completeopt=menuone,noinsert,noselect
 " set colorcolumn=120
+" Colors and cursor shape
+set termguicolors
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 " Change Color when entering Insert Mode
 autocmd InsertEnter * set cul
@@ -37,7 +36,6 @@ noremap <Right> <Nop>
 
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
-"Plug 'itchyny/lightline.vim'
 Plug 'puremourning/vimspector'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
@@ -56,7 +54,7 @@ call plug#end()
 set encoding=utf-8
 colorscheme gruvbox
 set background=dark
-
+" Show absolute paths of opened file
 set statusline+=%F
 
 " let g:termdebug_wide=1
@@ -65,18 +63,6 @@ set statusline+=%F
 " if !exists('g:airline_symbols')
 "    let g:airline_symbols = {}
 " endif
-
-" lighline vim-fugitive config
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
 
 if executable('rg')
     let g:rg_derive_root='true'
