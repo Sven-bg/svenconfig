@@ -6,7 +6,6 @@ set noerrorbells
 set relativenumber
 set nu
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -44,3 +43,9 @@ colorscheme gruvbox
 set background=dark
 " Show absolute paths of opened file
 set statusline+=%F
+
+if executable('rg')
+    let g:rg_derive_root='true'
+endif
+" Load vimspector
+" packadd! vimspector
