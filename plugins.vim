@@ -22,7 +22,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'https://github.com/ycm-core/YouCompleteMe.git'
+"Plug 'https://github.com/ycm-core/YouCompleteMe.git'
 Plug 'puremourning/vimspector'
 Plug 'szw/vim-maximizer'
 call plug#end()
