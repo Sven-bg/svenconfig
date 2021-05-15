@@ -11,9 +11,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Better Syntax Support
 Plug 'sheerun/vim-polyglot'
 " File Explorer
-Plug 'scrooloose/NERDTree'
-" Auto pairs for '(' '[' '{'
-Plug 'jiangmiao/auto-pairs'
 Plug 'puremourning/vimspector'
 Plug 'jremmen/vim-ripgrep'
 Plug 'puremourning/vimspector'
@@ -25,4 +22,12 @@ Plug 'vim-airline/vim-airline-themes'
 "Plug 'https://github.com/ycm-core/YouCompleteMe.git'
 Plug 'puremourning/vimspector'
 Plug 'szw/vim-maximizer'
+" Use release branch (recommend)
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'for':['zig','cmake','rust',
+     \'java','json', 'haskell', 'ts','sh', 'cs',
+     \'yaml', 'c', 'cpp', 'd', 'go',
+     \'python', 'dart', 'javascript', 'vim'], 'branch': 'release'}
+" Plug 'neovim/nvim-lspconfig'
 call plug#end()
+
