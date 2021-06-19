@@ -13,21 +13,19 @@ Plug 'sheerun/vim-polyglot'
 " File Explorer
 Plug 'puremourning/vimspector'
 Plug 'jremmen/vim-ripgrep'
-Plug 'puremourning/vimspector'
 Plug 'rust-lang/rust.vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "Plug 'https://github.com/ycm-core/YouCompleteMe.git'
-Plug 'puremourning/vimspector'
 Plug 'szw/vim-maximizer'
 " Use release branch (recommend)
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'for':['zig','cmake','rust',
-     \'java','json', 'haskell', 'ts','sh', 'cs',
-     \'yaml', 'c', 'cpp', 'd', 'go',
-     \'python', 'dart', 'javascript', 'vim'], 'branch': 'release'}
-" Plug 'neovim/nvim-lspconfig'
+            \'java','json', 'haskell', 'ts','sh', 'cs',
+            \'yaml', 'c', 'cpp', 'd', 'go',
+            \'python', 'dart', 'javascript', 'vim'], 'branch': 'release'}
+"Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
